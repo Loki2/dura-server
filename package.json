@@ -1,0 +1,36 @@
+{
+  "name": "labiQ",
+  "version": "1.0.0",
+  "main": "server.js",
+  "author": "Loki",
+  "license": "MIT",
+  "scripts": {
+    "start": "node Server.js",
+    "serve": "nodemon Server.js",
+    "client": "npm start --prefix Client",
+    "dev": "concurrently \"npm run serve\" \"npm run client\" "
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "express-fileupload": "^1.1.7-alpha.3",
+    "fs-extra": "^9.0.1",
+    "joi": "^14.3.1",
+    "jsonwebtoken": "^8.5.1",
+    "mkdirp": "^1.0.4",
+    "mongoose": "^5.9.16",
+    "morgan": "^1.10.0",
+    "multer": "^1.4.2",
+    "passport": "^0.4.1",
+    "passport-jwt": "^4.0.0",
+    "resize-img": "^2.0.0",
+    "validator": "^13.0.0",
+    "fluent-ffmpeg": "^2.1.2"
+  },
+  "devDependencies": {
+    "concurrently": "^5.2.0",
+    "nodemon": "^2.0.4"
+  }
+}
