@@ -18,9 +18,9 @@ if (process.env.NODE_ENV === "production") {
 }
 
 if (process.env.NODE_ENV === "production") {
-  const privateKey = fs.readFileSync('/etc/letsencrypt/live/anime-sales.com/privkey.pem', 'utf8');
-  const certificate = fs.readFileSync('/etc/letsencrypt/live/anime-sales.com/cert.pem', 'utf8');
-  const ca = fs.readFileSync('/etc/letsencrypt/live/anime-sales.com/chain.pem', 'utf8');
+  const privateKey = fs.readFileSync('/etc/letsencrypt/live/swizce.com/privkey.pem', 'utf8');
+  const certificate = fs.readFileSync('/etc/letsencrypt/live/swizce.com/cert.pem', 'utf8');
+  const ca = fs.readFileSync('/etc/letsencrypt/live/swizce.com/chain.pem', 'utf8');
   const credentials = {
       key: privateKey,
       cert: certificate,
